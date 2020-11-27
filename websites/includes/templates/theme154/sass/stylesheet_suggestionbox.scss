@@ -1,0 +1,130 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+@import "theme_variables";
+@import "stylesheet_font-awesome.min";
+
+#suggestions{ 
+	position:absolute; 
+	left:0px!important; 
+	top:38px;
+	width:100%; 
+	display:none; 
+	z-index: 9999; 
+	border-width:1px; 
+	border-color:#dedede;
+	border-style:solid;
+	background:#fff;
+}
+#suggestions hr { 
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+.suggestion { 
+	background-color: #FFF;
+	font-size:12px;
+	position:relative;
+}
+.suggestion a { 
+	display:block; 
+	clear:left; 
+	text-decoration:none; 
+	padding: 5px;
+	height:132px;
+	border-bottom:1px solid #f0f0f0;
+}
+.suggestion a:hover { 
+	color:#0080C0;
+	background-color:#f7f7f7;
+}
+.suggestion img.img-responsive{
+	float:left;
+	margin: 0px 20px 0 0 !important; 
+}
+.suggestion .search-info{ 
+	float:left;
+	width:60%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.suggestion .search-info{ 
+		width:55%;
+	}
+	.suggestion img.img-responsive{
+		float:left;
+		margin: 0px 10px 0 0 !important; 
+	}
+}
+@media (max-width: 991px) {
+	.suggestion .search-info{ 
+		width:60%;
+	}
+	.suggestion img.img-responsive{
+		width:30%;
+	}
+	.suggestion .productPriceDiscount{
+		top:auto !important;
+		bottom:10px;
+	}
+}
+.suggestion .product-name{
+	margin:10px 0 0 0;
+	display:inline-block;
+}
+.suggestion  .model{
+	margin-top:10px;
+}
+.suggestion .model,
+.suggestion .brand {
+	display:block;
+	color:#3a3939;
+	font-size:12px;
+	line-height:18px;
+	margin-bottom:5px;
+}
+.suggestion .productPriceDiscount{
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+#suggestionPaging {
+	background-color:#232323;
+	color:#fff;
+	height: 24px;
+	font-size:14px;
+	line-height:18px;
+	font-weight:bold;
+	padding: 2px;
+	text-transform:lowercase;
+}
+#suggestionCount {
+	text-align:center;
+	display:block;
+	font-weight:normal;
+}
+#suggestionPrev {
+	display: block;
+	cursor:pointer;
+	text-align: left;
+	padding-left:10px;
+	float:left;
+}
+#suggestionPrev:after{
+	content:'';
+	font-family:'FontAwesome';
+	
+}
+#suggestionNext {
+	display: block;
+	float:right;
+	text-align:right;
+	cursor:pointer;
+	padding-right:10px;
+}
+#suggestionNext:after{
+	content:'';
+	font-family:'FontAwesome';	
+}
+#suggestionPrev:hover, #suggestionNext:hover {
+	color:#e82020;
+}

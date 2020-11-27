@@ -1,0 +1,130 @@
+// ------- FONTS -------
+
+$font-family:				  		Arial, Helvetica, sans-serif;
+$font:						  		normal 12px/18px $font-family;
+$font-custom:                 		'Roboto', sans-serif;
+$font-custom2:                 		'Roboto Condensed', sans-serif;
+$font-weight:                 		400;
+$font-icon:                   		"FontAwesome";
+
+$label-background:					#8dd5bc;
+@mixin subpages-elements-bg{
+	background: rgb(141,213,188);
+}
+
+// ------- COLORS -------
+
+$color:			        #8dd5bc;
+$color1:			    #6cb69c;
+$color-main:			#777;
+$color-heading:			#333;
+$color-hover:			#333;
+
+// ------- BORDERS -------
+
+$border:					 1px solid #e5e5e5;
+$border-main-color:				#e5e5e5;
+$border-main:					1px solid #e5e5e5;
+$border-subcat:					4px solid #fff;
+$border-subcat-hov:				4px solid #e5e5e5;
+
+// ------- PRODUCTS -------
+@mixin product-name{
+	color:#333333;
+	text-transform:uppercase;
+	font:700 14px/19px $font-custom2;
+}
+
+$product-name-hover:				#8dd5bc;
+@mixin description-text{
+	color:#777777;
+	font:400 12px/18px $font-custom;
+}
+@mixin price{
+	color:#8dd5bc;
+	font:700 16px/20px $font-custom2;
+	vertical-align: middle;
+}
+@mixin price-old{
+	color:#333;
+	font:400 16px/20px $font-custom2;
+	text-decoration:line-through;
+	padding:0 0 0 7px;
+	vertical-align: middle;
+}
+@mixin price-lh {
+	font:400 16px/20px $font-custom2;
+}
+
+// ------- BUTTONS -------
+@mixin button-default{
+	padding:6px 10px;
+	background: #8dd5bc;
+	background-repeat: repeat;
+	color:#fff;
+	text-transform:uppercase;
+	font:700 14px/25px $font-custom;
+	border-radius:0!important;
+	border:0;
+	&:hover{
+		background:#6cb69c;
+		color: #fff;
+	}
+}
+
+@mixin button-alternative{
+	padding:6px 10px;
+	background: #8dd5bc;
+	color:#fff;
+	text-transform:uppercase;
+	font:700 14px/25px $font-custom;
+	border-radius:0;
+	border:0;
+	&:hover{
+		background:#6cb69c;
+		color: #fff;
+	}
+}
+
+// ------- TITLES -------
+@mixin sub-heading{
+	background: #333;
+	color:#fff;
+	font:700 16px/25px $font-custom2;
+	text-transform:uppercase;
+	padding:15px 0 13px 20px;
+	margin:0 0 30px 0;
+}
+@mixin sub-heading-col{
+	font: 700 16px/24px $font-custom2;
+    color: #fff;
+	text-transform:uppercase;
+	padding:15px 0 14px 20px;
+    background: $color;
+	margin:0 0 30px;
+}
+@mixin breadcrumb_bg {
+	background: #8dd5bc;
+}
+
+// ------- OTHER -------
+
+$trans-grad: all .4s linear;
+
+@mixin transition {
+	-moz-transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+@mixin box-shadow1{
+	-webkit-box-shadow: 1px 1px 18px 0px rgba(155, 155, 155, 0.3);
+	-moz-box-shadow:    1px 1px 18px 0px rgba(155, 155, 155, 0.3);
+	box-shadow:         1px 1px 18px 0px rgba(155, 155, 155, 0.3);
+}
+@mixin box-shadow2{
+	-webkit-box-shadow: inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+	-moz-box-shadow:    inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+	box-shadow:         inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+}
+
+$mr_t: 20px;

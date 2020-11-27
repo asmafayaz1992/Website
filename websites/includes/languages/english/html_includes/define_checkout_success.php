@@ -1,0 +1,1 @@
+<p><strong>Checkout Success</strong></p><p>A few words about the shipping. </p>
